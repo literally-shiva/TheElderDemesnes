@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dwen1qoikelo5"]
 
 [ext_resource type="PackedScene" uid="uid://d0dj265bumgkb" path="res://Entities/Player/Player.tscn" id="1_vyjyh"]
+[ext_resource type="Script" uid="uid://dfmsy8d74m03v" path="res://Entities/Player/Player.cs" id="2_7dfsg"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rspac"]
 size = Vector3(16, 1, 16)
@@ -21,6 +22,7 @@ mesh = SubResource("BoxMesh_rspac")
 
 [node name="Player" parent="." unique_id=994475722 instance=ExtResource("1_vyjyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0853138, 0)
+script = ExtResource("2_7dfsg")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2134226367]
 transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1.0000001, 0, -1.0000001, -4.3711392e-08, 0, 16, 0)
